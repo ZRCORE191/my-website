@@ -1,12 +1,1 @@
-﻿{
-  "name": "njb-fitness-storefront",
-  "private": true,
-  "version": "1.0.0",
-  "description": "NJB FITNESS storefront with Razorpay checkout",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "engines": {
-    "node": ">=18"
-  }
-}
+﻿
