@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NJB FITNESS | Premium Fitness Spare Parts</title>
+    <meta
+      name="description"
+      content="NJB FITNESS sells premium spare parts for treadmills, bikes, rowers, benches, and strength equipment with a smooth modern shopping experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="NJB FITNESS home">
+          <span class="brand-mark">NF</span>
+          <span>
+            <strong>NJB FITNESS</strong>
+            <small>Fitness Spare Parts</small>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="#products">Shop</a>
+          <a href="#categories">Categories</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <button class="cart-button" id="cartToggle" type="button" aria-label="Open cart">
+          Cart
+          <span id="cartCount">0</span>
+        </button>
+      </header>
+
+      <main id="home">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Precision Parts for Serious Training Spaces</p>
+            <h1>Keep every treadmill, bike, and rack performing like day one.</h1>
+            <p class="hero-text">
+              Shop durable replacement belts, console kits, cables, rollers, pedals,
+              and maintenance essentials built for commercial gyms and home setups.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#products">Shop Parts</a>
+              <a class="button button-secondary" href="#support">Get Fit Support</a>
+            </div>
+
+            <div class="hero-stats">
+              <article>
+                <strong>1,200+</strong>
+                <span>Ready-to-ship parts</span>
+              </article>
+              <article>
+                <strong>48 hrs</strong>
+                <span>Average dispatch window</span>
+              </article>
+              <article>
+                <strong>4.9/5</strong>
+                <span>Trusted by gym owners</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="hero-card hero-card-main reveal">
+              <span class="tag">Best Seller</span>
+              <h2>Treadmill Drive Belt Kit</h2>
+              <p>Low-friction reinforced belt set with alignment guide and care wax.</p>
+              <div class="price-row">
+                <strong>INR 89</strong>
+                <span>Commercial-grade</span>
+              </div>
+            </div>
+            <div class="hero-grid">
+              <div class="hero-card reveal">
+                <span class="mini-label">New</span>
+                <h3>Bike Pedal Rebuild Pack</h3>
+                <p>Grip straps, bearings, and lock rings for spin bikes.</p>
+              </div>
+              <div class="hero-card accent reveal">
+                <span class="mini-label">Fast Fix</span>
+                <h3>Universal Cable Set</h3>
+                <p>Pre-cut steel cable replacements for selectorized machines.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-strip reveal">
+          <span>Compatible with major fitness equipment brands</span>
+          <div>
+            <b>StrideCore</b>
+            <b>VoltFit</b>
+            <b>RackForge</b>
+            <b>MotionX</b>
+            <b>PeakCycle</b>
+          </div>
+        </section>
+
+        <section class="section categories" id="categories">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Core Collections</p>
+            <h2>Spare parts by equipment type</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <span>01</span>
+              <h3>Treadmill Parts</h3>
+              <p>Belts, rollers, decks, control boards, safety keys, and motor brushes.</p>
+            </article>
+            <article class="category-card reveal">
+              <span>02</span>
+              <h3>Bike Components</h3>
+              <p>Pedals, resistance knobs, saddles, crank arms, and flywheel parts.</p>
+            </article>
+            <article class="category-card reveal">
+              <span>03</span>
+              <h3>Strength Machine Cables</h3>
+              <p>Pulleys, pins, guide rods, selector cables, and protective sleeves.</p>
+            </article>
+            <article class="category-card reveal">
+              <span>04</span>
+              <h3>Maintenance Essentials</h3>
+              <p>Lubricants, cleaners, fasteners, covers, and repair-ready tool kits.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section products" id="products">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Inventory</p>
+            <h2>Upgrade, replace, and repair without downtime</h2>
+          </div>
+
+          <div class="toolbar reveal">
+            <div class="filter-group" id="filters">
+              <button class="filter active" data-filter="all" type="button">All</button>
+              <button class="filter" data-filter="treadmill" type="button">Treadmill</button>
+              <button class="filter" data-filter="bike" type="button">Bike</button>
+              <button class="filter" data-filter="strength" type="button">Strength</button>
+              <button class="filter" data-filter="maintenance" type="button">Maintenance</button>
+            </div>
+            <p class="toolbar-note">Secure checkout powered by Razorpay</p>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="section story" id="why-us">
+          <div class="story-panel reveal">
+            <p class="eyebrow">Why NJB FITNESS</p>
+            <h2>Built for gym owners, service teams, and committed home athletes.</h2>
+            <p>
+              We pair durable parts with compatibility guidance, quick dispatch, and a
+              design-first shopping flow that helps you find the right fix faster.
+            </p>
+          </div>
+          <div class="story-metrics">
+            <article class="metric reveal">
+              <strong>96%</strong>
+              <span>First-order compatibility match rate</span>
+            </article>
+            <article class="metric reveal">
+              <strong>24/7</strong>
+              <span>Self-serve parts lookup and reorder flow</span>
+            </article>
+            <article class="metric reveal">
+              <strong>300+</strong>
+              <span>Commercial facilities supplied monthly</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section support" id="support">
+          <div class="support-card reveal">
+            <div>
+              <p class="eyebrow">Need Help Matching a Part?</p>
+              <h2>Tell us the machine and symptom. We'll point you to the right fix.</h2>
+            </div>
+            <form class="support-form">
+              <input type="text" placeholder="Machine model" aria-label="Machine model" />
+              <input type="text" placeholder="Issue or part needed" aria-label="Issue or part needed" />
+              <button class="button button-primary" type="button">Request Support</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="section reviews">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Customer Feedback</p>
+            <h2>Reliable parts. Faster repairs. Better member experience.</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card reveal">
+              <p>
+                "We replaced four treadmill decks in one order and had everything
+                installed before the weekend rush."
+              </p>
+              <strong>Rhea Thomas</strong>
+              <span>Operations Lead, CoreLab Gym</span>
+            </article>
+            <article class="review-card reveal">
+              <p>
+                "The cart and filter flow made it simple to find matching bike pedals
+                and resistance parts in minutes."
+              </p>
+              <strong>Jason Miller</strong>
+              <span>Studio Owner, Sprint House</span>
+            </article>
+            <article class="review-card reveal">
+              <p>
+                "Clean design, fast shipping, and the part fit right the first time.
+                Exactly what our service team needed."
+              </p>
+              <strong>Nadia Khan</strong>
+              <span>Equipment Technician</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section faq" id="faq">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Quick Answers</p>
+            <h2>Frequently asked questions</h2>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>How do I know if a part fits my machine?</summary>
+              <p>Use the machine model number and category filters, or request support with your equipment details.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Do you sell parts for commercial gyms?</summary>
+              <p>Yes. The catalog includes heavy-duty components for both commercial and home fitness equipment.</p>
+            </details>
+            <details class="faq-item reveal">
+              <summary>Can I reorder common maintenance kits quickly?</summary>
+              <p>Yes. Add items to the cart and use the smooth reorder-ready flow for faster repeat purchases.</p>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>NJB FITNESS</strong>
+          <p>Premium fitness spare parts for performance-driven spaces.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#products">Shop</a>
+          <a href="#support">Support</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </footer>
+    </div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Your Cart</p>
+          <h2>Selected parts</h2>
+        </div>
+        <button class="cart-close" id="cartClose" type="button" aria-label="Close cart">
+          &times;
+        </button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-state">Your cart is empty. Add a part to get started.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-row">
+          <span>Total</span>
+          <strong id="cartTotal">INR 0</strong>
+        </div>
+        <div class="customer-fields">
+          <label class="field">
+            <span>Name</span>
+            <input id="customerName" type="text" placeholder="Customer name" autocomplete="name" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input id="customerEmail" type="email" placeholder="name@example.com" autocomplete="email" />
+          </label>
+          <label class="field">
+            <span>Phone</span>
+            <input id="customerPhone" type="tel" placeholder="9876543210" autocomplete="tel" />
+          </label>
+          <label class="field">
+            <span>Address</span>
+            <textarea id="customerAddress" placeholder="House number, street, area, city, pincode" rows="3" autocomplete="street-address"></textarea>
+          </label>
+        </div>
+        <p class="checkout-note">Payments are processed securely with Razorpay.</p>
+        <p class="checkout-status info" id="checkoutStatus" role="status" aria-live="polite">
+          Add your Razorpay API keys in the server config to enable checkout.
+        </p>
+        <button class="button button-primary checkout" id="checkoutButton" type="button">
+          Pay with Razorpay
+        </button>
+      </div>
+    </aside>
+
+    <div class="backdrop" id="backdrop" hidden></div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

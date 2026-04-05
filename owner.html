@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NJB FITNESS | Owner Dashboard</title>
+    <meta
+      name="description"
+      content="Private NJB FITNESS owner dashboard for sales totals, order count, and customer order details."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="owner-body">
+    <div class="site-shell owner-shell">
+      <header class="topbar owner-topbar">
+        <a class="brand" href="/" aria-label="NJB FITNESS home">
+          <span class="brand-mark">NF</span>
+          <span>
+            <strong>NJB FITNESS</strong>
+            <small>Private Owner Dashboard</small>
+          </span>
+        </a>
+
+        <nav class="nav owner-nav">
+          <a href="/">Store</a>
+          <a href="/#products">Products</a>
+          <a href="/#support">Support</a>
+        </nav>
+      </header>
+
+      <main class="owner-main">
+        <section class="owner-hero reveal visible">
+          <div>
+            <p class="eyebrow">Private Access</p>
+            <h1>Track orders, monthly sales, and customer details from one screen.</h1>
+            <p class="hero-text">
+              This page is for owner use only. Log in to view order count, sales totals,
+              customer phone numbers, addresses, and live order alerts.
+            </p>
+          </div>
+        </section>
+
+        <section class="owner-panel reveal visible" id="ownerLoginPanel">
+          <div class="section-heading">
+            <p class="eyebrow">Owner Login</p>
+            <h2>Sign in to your private dashboard</h2>
+          </div>
+
+          <form class="owner-login-form" id="ownerLoginForm">
+            <label class="field">
+              <span>Username</span>
+              <input id="ownerUsername" type="text" placeholder="owner" autocomplete="username" required />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input id="ownerPassword" type="password" placeholder="Password" autocomplete="current-password" required />
+            </label>
+            <button class="button button-primary" id="ownerLoginButton" type="submit">
+              Open Dashboard
+            </button>
+          </form>
+
+          <p class="checkout-status info owner-status" id="ownerLoginStatus" role="status" aria-live="polite">
+            Enter your owner login to view private sales and customer information.
+          </p>
+        </section>
+
+        <section class="owner-dashboard" id="ownerDashboard" hidden>
+          <div class="owner-actions">
+            <div>
+              <p class="eyebrow">Live Overview</p>
+              <h2 class="owner-title">Orders and sales</h2>
+            </div>
+            <div class="owner-action-buttons">
+              <button class="button button-secondary" id="enableNotificationsButton" type="button">
+                Enable Alerts
+              </button>
+              <button class="button button-secondary" id="refreshDashboardButton" type="button">
+                Refresh
+              </button>
+              <button class="button button-secondary" id="logoutButton" type="button">
+                Logout
+              </button>
+            </div>
+          </div>
+
+          <div class="checkout-status info owner-status" id="dashboardStatus" role="status" aria-live="polite">
+            Loading owner dashboard...
+          </div>
+
+          <div class="owner-alert-banner" id="ownerAlertBanner" hidden></div>
+
+          <div class="owner-stats-grid">
+            <article class="owner-stat-card">
+              <span>Last 30 Days Sales</span>
+              <strong id="last30DaysSales">INR 0</strong>
+            </article>
+            <article class="owner-stat-card">
+              <span>Last 30 Days Orders</span>
+              <strong id="last30DaysOrders">0</strong>
+            </article>
+            <article class="owner-stat-card">
+              <span>This Month Sales</span>
+              <strong id="thisMonthSales">INR 0</strong>
+            </article>
+            <article class="owner-stat-card">
+              <span>This Month Orders</span>
+              <strong id="thisMonthOrders">0</strong>
+            </article>
+            <article class="owner-stat-card">
+              <span>Last Month Sales</span>
+              <strong id="lastMonthSales">INR 0</strong>
+            </article>
+            <article class="owner-stat-card">
+              <span>Total Orders</span>
+              <strong id="lifetimeOrders">0</strong>
+            </article>
+          </div>
+
+          <section class="owner-orders-panel">
+            <div class="section-heading">
+              <p class="eyebrow">Recent Orders</p>
+              <h2>Customer phone number and address details</h2>
+            </div>
+            <div class="owner-orders-list" id="ownerOrders">
+              <p class="empty-state">No orders yet.</p>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="owner.js"></script>
+  </body>
+</html>
